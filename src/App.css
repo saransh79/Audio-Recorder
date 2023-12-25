@@ -1,38 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #303030;
+  color: #fff;
+  background-image: url('https://source.unsplash.com/1920x1080/?dark,nature');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Chat-container {
+  background-color: #424242;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.Chat-container::-webkit-scrollbar{
+  display: none;
+}
+.Message {
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.User-message {
+  text-align: right;
+}
+
+.Bot-message {
+  text-align: left;
+}
+
+.Message p {
+  /* margin: 0; */
+  padding: 10px;
+  border-radius: 5px;
+}
+.Message button{
+  margin: 0;
+}
+.info {
+  background-color: #263238;
+}
+
+.error {
+  background-color: #b71c1c;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+header {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
 }
